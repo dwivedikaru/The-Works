@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  scroll-behavior: smooth;
+  background-color: lightcoral !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #103c8d;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.3rem !important;
+  color: navy;
+}
+
+.profile-sec {
+  padding: 2rem 0 0 0;
+  position: relative;
+}
+
+.profie-head {
+  display: flex;
+  justify-content: center;
+}
+.profie-head h1 {
+  color: navy;
+  font-weight: 600;
+}
+.profie-head span {
+  display: block;
+}
+.profie-head p {
+}
+
+.profile-content {
+  position: relative;
+}
+.profile-content:after {
+  content: '';
+  width: 3px;
+  position: absolute;
+  left: -10%;
+  top: 0;
+  background-color: navy;
+  height: 188px;
+}
+
+.border-left-first {
+  border-left: 5px solid navy;
+}
+.border-bottom-first {
+  border-bottom: 3px solid navy;
+}
+
+.work-sec {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.word-content {
+  justify-content: center;
+  padding-left: 9rem;
+}
+
+.word-content .word-contents {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 1rem 0;
+}
+.word-content .word-contents h6 {
+  width: 20%;
+  color: navy;
+}
+.word-content .word-contents p {
+  width: 100%;
+}
+.icons {
+  display: inline-flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.icons img {
+  width: 100%;
+}
+.skil-head {
+  text-align: center;
+}
+.profile-sec::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  margin-top: -1px;
+  bottom: 0;
+  background: navy;
+  right: 50px;
+}
+.work-sec::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  margin-top: -1px;
+  bottom: 0;
+  background: navy;
+  right: 50px;
+}
+.interesr-sec::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  margin-top: -1px;
+  bottom: 0;
+  background: navy;
+  right: 50px;
+}
+.interesr-sec {
+  position: relative;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: navy;
+  border-radius: 50%;
+  display: inline-block;
+}
+.skill-sec {
+  position: relative;
+  padding: 1rem 0 0 0;
+}
+
+.skill-content {
+  justify-content: center;
+  padding-left: 9rem;
+}
+
+.skill-content .skill-contents {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  padding: 1rem 0;
+}
+.skill-content .skill-contents h6 {
+  width: 20%;
+  color: navy;
+}
+.skill-content .skill-contents p {
+  width: 100%;
+}
+.skill-content1 .skill-contents {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 1rem 0;
+}
+.skill-content1 .skill-contents h6 {
+  width: 20%;
+  color: navy;
+}
+.skill-content1 .skill-contents p {
+  width: 100%;
+}
+.skill-sec::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 70%;
+  margin-top: -1px;
+  bottom: 0;
+  background: navy;
+  right: 50px;
+}
+.skill-content1:after {
+  content: '';
+  width: 3px;
+  position: absolute;
+  left: 55%;
+  top: 0;
+  background-color: navy;
+  height: 370px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1440px) {
+  .profile-content:after {
+    height: 175px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .profile-content:after {
+    height: 160px;
+  }
+  .skill-content .skill-contents {
+    gap: 70px;
+  }
+  .skill-content,
+  .word-content {
+    padding-left: 6rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .skill-content,
+  .word-content,.skill-content1{
+    padding: 10px;
+  }
+  img {
+    width: 50%;
+  }
+  .work-head img,
+  .profile-image img,
+  .skill-head img {
+    display: block;
+    margin: 0 auto;
+  }
+  .skill-sec::before,
+  .skill-content1:after,
+  .profile-sec::before,
+  .work-sec::before,
+  .interesr-sec::before {
+    display: none;
+  }
+  .skill-content1:after {
+    display: none;
+  }
+
+  .profile-content {
+    position: relative;
+    text-align: center;
+  }
+  .word-content .word-contents,
+  .skill-content1 .skill-contents {
+    gap: 15px;
+  }
+  .skill-content .skill-contents {
+    gap: 100px;
+  }
+  .word-content .word-contents h6 {
+    width: 50%;
+}
+}
